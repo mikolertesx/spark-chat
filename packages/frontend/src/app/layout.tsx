@@ -1,7 +1,17 @@
-import "./globals.css";
-import "/node_modules/primeflex/primeflex.css";
+"use client";
 
 import { Inter } from "next/font/google";
+import "./globals.css";
+
+//theme
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "/node_modules/primeflex/primeflex.css";
+
+//core
+import "primereact/resources/primereact.min.css";
+
+// icons
+import "primeicons/primeicons.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

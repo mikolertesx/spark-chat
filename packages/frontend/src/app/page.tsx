@@ -133,13 +133,6 @@ export default function Home() {
 	// perhaps friends list on the right and chat window
 	// on the right.
 	return (
-		// <main className="flex min-h-screen flex-col items-center justify-between p-24">
-		// 	<Button icon={"pi pi-check"} label="Start Chatting!"></Button>
-		// </main>
-
-		// soy mejicano!!! jajajajaja
-		//                   - monika
-
 		<div className="flex w-screen h-screen">
 			<ChatsList />
 			<div className="relative flex flex-column w-9">

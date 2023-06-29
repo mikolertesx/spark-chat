@@ -11,10 +11,9 @@ import "primereact/resources/primereact.min.css";
 // icons
 import "primeicons/primeicons.css";
 
-// could use some decluttering
+// our components
 import ChatsList from "../components/ChatsList.js";
 import MessageInput from "../components/MessageInput.js";
-import { ScrollPanel } from "primereact/scrollpanel";
 
 export default function Home() {
 	useEffect(() => {
@@ -130,8 +129,6 @@ export default function Home() {
 		</p>
 	);
 
-	// perhaps friends list on the right and chat window
-	// on the right.
 	return (
 		<div className="flex w-screen h-screen">
 			<ChatsList />

@@ -1,5 +1,5 @@
 import "./globals.css";
-import "../../node_modules/primeflex/primeflex.css";
+import "/node_modules/primeflex/primeflex.css";
 
 import { Inter } from "next/font/google";
 

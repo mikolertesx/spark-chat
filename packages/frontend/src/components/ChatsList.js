@@ -3,7 +3,7 @@ import { ListBox } from 'primereact/listbox';
 import { Card } from 'primereact/card';
 
 export default function ChatsList() {
-	// tho idk, maybe make the parent handle the state.
+	// maybe make the parent handle the state.
 	const [selectedChat, setSelectedChat] = useState('')
 	let friends = [
 		'PaxFilipinas',

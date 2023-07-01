@@ -3,8 +3,8 @@ import { Button } from "primereact/button";
 
 export default function MessageInput() {
 	return (
-		<div className="message-input flex row">
-			<InputText className="flex-grow-1"></InputText>
+		<div className="message-input flex border-round-lg px-6  py-5 surface-50 shadow-5">
+			<InputText className="flex-grow-1 "></InputText>
 			<Button label="Send it!"></Button>
 		</div>
 	)

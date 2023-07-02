@@ -4,8 +4,6 @@ import { Card } from 'primereact/card';
 import { VirtualScroller } from 'primereact/virtualscroller';
 
 export default function ChatsList(props) {
-	// maybe make the parent handle the state.
-
 
 	// TODO: Make ListBox scrollable.
 	let friends = [
@@ -33,7 +31,7 @@ export default function ChatsList(props) {
 			<ListBox
 				filter
 				onChange={(e) => props.onChatSelect(e.value)}
-				onClick={console.log('list box clicked')}
+				onClick={() => { console.log('list box clicked') }}
 				options={friends}
 				className='flex-grow-1 shadow-5'
 			/>

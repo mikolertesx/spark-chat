@@ -12,7 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "socket.io": "^4.7.1",
+    "utf-8-validate": "^5.0.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"

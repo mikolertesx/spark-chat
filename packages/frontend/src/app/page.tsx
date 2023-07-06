@@ -31,7 +31,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div className="flex w-screen h-screen">
+		<div className="flex w-screen h-screen overflow-x-hidden">
 			<ChatsList onChatSelect={setSelectedChat} />
 			<MessagingPanel selectedFriend={selectedChat} />
 		</div>

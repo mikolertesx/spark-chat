@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { ListBox } from 'primereact/listbox';
 import { Card } from 'primereact/card';
 import { VirtualScroller } from 'primereact/virtualscroller';
@@ -26,8 +25,8 @@ export default function ChatsList(props) {
 	// should have values with friends,
 	// group chats, etc. and proper icons
 	return (
-		<div className='flex flex-column w-3 p-4'>
-			<Card title='Your Friends' className='surface-50 mb-3 shadow-3 border-noround'></Card>
+		<div className='flex flex-column w-3 p-4 max-w-full'>
+			<Card title='Your Friends' className='surface-50 mb-3 shadow-3 border-noround' />
 			<ListBox
 				filter
 				onChange={(e) => props.onChatSelect(e.value)}

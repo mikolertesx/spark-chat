@@ -16,9 +16,7 @@ import ChatsList from "../components/ChatsList";
 import MessagingPanel from "../components/MessagingPanel";
 
 export default function Home() {
-	const [selectedChat, setSelectedChat] = useState(
-		"Choose a friend to get started!"
-	);
+	const [selectedChat, setSelectedChat] = useState("");
 
 	useEffect(() => {
 		const getData = async () => {
@@ -31,7 +29,7 @@ export default function Home() {
 	}, []);
 
 	return (
-		<div className="flex w-screen h-screen overflow-x-hidden">
+		<div className="flex w-screen h-screen overflow-x-hidden overflow-y-hidden">
 			<ChatsList onChatSelect={setSelectedChat} />
 			<MessagingPanel selectedFriend={selectedChat} />
 		</div>

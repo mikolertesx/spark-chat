@@ -1,11 +1,8 @@
 import MessageOutput from './MessageOutput'
 import MessageInput from './MessageInput'
 import { Card } from 'primereact/card';
-// import { useState } from 'react';
 
 export default function MessagingPanel(props) {
-	// const [history, setHistory] = useState([])
-
 	function onSendHandler(message) {
 		setHistory([...history, message])
 	}
@@ -35,6 +32,6 @@ export default function MessagingPanel(props) {
 						</span>
 					</div>
 			}
-		</div>
+    </div>
 	)
 }

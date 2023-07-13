@@ -1,7 +1,6 @@
 import { Card } from 'primereact/card';
 import histories from './Histories'
 
-
 export default function ChatsList(props) {
 
 	// TODO: Make ChatsList scrollable.

@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+// Allows us to use sockets
+const nextConfig = {
+  transpilePackages: ["bufferutil", "utf-8-validate"],
+};
+
+module.exports = nextConfig;

@@ -2,11 +2,12 @@ import histories from './Histories'
 
 export default function MessageOutput(props) {
 
+
 	let currentChatMate = histories.filter(x => x.name === props.currentFriend)[0]
 	let currentUser = histories.filter(x => x.name === 'Senor Monikas')[0]
 
 	return (
-		<div className="message-history-container border-round-lg shadow-4 flex-grow-1 overflow-y-auto p-4 mb-3">
+		<div className="message-history-container border-round-lg border-noround-bottom flex-grow-1 overflow-y-auto p-4 py-0">
 			<div className="message-logs" style={{ width: "100%" }}>
 				{
 					<>
@@ -60,6 +61,7 @@ export default function MessageOutput(props) {
 					</>
 				}
 			</div>
+
 		</div>
 	)
 }

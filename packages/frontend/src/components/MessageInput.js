@@ -6,11 +6,11 @@ export default function MessageInput(props) {
 	const [message, setMessage] = useState('')
 
 	return (
-		<div className="message-input flex border-round-lg px-6 py-5 surface-50 shadow-5">
+		<div className="message-input flex justify-content-center border-round-lg border-noround-top px-6 py-5">
 			<InputText
 				value={message}
 				placeholder="Start typing away!"
-				className="flex-grow-1 border-round-2xl mr-3"
+				className="flex-grow-1 border-round-3xl mr-3"
 				onChange={(e) => {
 					console.log(e)
 					setMessage(e.target.value)
@@ -18,7 +18,7 @@ export default function MessageInput(props) {
 			/>
 			<Button
 				label="Send it!"
-				className="border-round-2xl"
+				className="border-round-3xl"
 				onClick={() => {
 					props.onSend(message)
 					setMessage('')

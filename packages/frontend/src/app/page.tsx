@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 
+// Makes sure the socket connection is started.
+import "@/util/connectToSocket";
+
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 
@@ -16,22 +19,24 @@ import ChatsList from "../components/ChatsList";
 import MessagingPanel from "../components/MessagingPanel";
 
 export default function Home() {
-	const [selectedChat, setSelectedChat] = useState("");
+  const [selectedChat, setSelectedChat] = useState(
+    "Choose a friend to get started!"
+  );
 
-	useEffect(() => {
-		const getData = async () => {
-			const data = await fetch("http://localhost:8000/");
-			const jsonResponse = await data.json();
-			console.log(jsonResponse);
-		};
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetch("http://localhost:8000/");
+      const jsonResponse = await data.json();
+      console.log(jsonResponse);
+    };
 
-		getData();
-	}, []);
+    getData();
+  }, []);
 
-	return (
-		<div className="flex w-screen h-screen overflow-x-hidden overflow-y-hidden">
-			<ChatsList onChatSelect={setSelectedChat} />
-			<MessagingPanel selectedFriend={selectedChat} />
-		</div>
-	);
+  return (
+    <div className="flex w-screen h-screen">
+      <ChatsList onChatSelect={setSelectedChat} />
+      <MessagingPanel selectedFriend={selectedChat} />
+    </div>
+  );
 }

@@ -8,7 +8,7 @@ export default function MessageInput(props) {
 	const [message, setMessage] = useState('')
 
 	return (
-		<div className="message-input flex border-round-lg px-6 py-5 surface-50 shadow-5">
+		<div className="message-input flex justify-content-center border-round-lg border-noround-top px-6 py-5">
 			<InputText
 				value={message}
 				placeholder="Start typing away!"
@@ -18,6 +18,7 @@ export default function MessageInput(props) {
 					setMessage(e.target.value)
 				}}
 			/>
+
 			<Button
 				label="Send it!"
 				className="border-round-2xl"

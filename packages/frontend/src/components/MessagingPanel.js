@@ -16,10 +16,12 @@ export default function MessagingPanel(props) {
 							title={props.selectedFriend}
 							className='shadow-2 surface-50 mb-2 py-0 h-100'
 						/>
+
 						<MessageOutput
 							currentFriend={props.selectedFriend}
 							chatHistory={history}
 						/>
+
 						<MessageInput
 							currentFriend={props.selectedFriend}
 							onSend={onSendHandler}

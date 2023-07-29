@@ -16,10 +16,12 @@ export default function MessagingPanel(props) {
 						<ChatMateHeader
 							selectedFriend={props.selectedFriend}
 						/>
+
 						<MessageOutput
 							currentFriend={props.selectedFriend}
 							chatHistory={history}
 						/>
+
 						<MessageInput
 							currentFriend={props.selectedFriend}
 							onSend={onSendHandler}

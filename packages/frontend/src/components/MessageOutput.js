@@ -34,7 +34,6 @@ export default function MessageOutput(props) {
 								}
 							)
 						}
-
 						{
 							currentUser.chatHistory.map(
 								(message) => {

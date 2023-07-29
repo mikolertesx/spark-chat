@@ -9,11 +9,8 @@ export default function ChatsList(props) {
 	return (
 		<div className='flex flex-column w-3 p-4 max-w-full'>
 			<div className="chats-list border-round-lg shadow-4 flex-grow-1 p-4" style={{ width: "100%" }}>
-
 				<div className='text-2xl p-1 mb-3 border-bottom-2 border-primary'>Your Friends</div>
-
 				{/* below is likely to be changed */}
-
 				{histories.map(chatData => {
 					return (
 						<div

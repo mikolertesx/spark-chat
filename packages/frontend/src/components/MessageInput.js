@@ -7,6 +7,7 @@ export default function MessageInput(props) {
 
 	return (
 		<div className="message-input flex justify-content-center border-round-lg border-noround-top px-6 py-5">
+
 			<InputText
 				value={message}
 				placeholder="Start typing away!"
@@ -16,6 +17,7 @@ export default function MessageInput(props) {
 					setMessage(e.target.value)
 				}}
 			/>
+
 			<Button
 				label="Send it!"
 				className="border-round-3xl"

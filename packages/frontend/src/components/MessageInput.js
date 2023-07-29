@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { InputText } from "primereact/inputtext";
 import { Button } from "primereact/button";
 import { useState } from "react";
@@ -7,11 +9,10 @@ export default function MessageInput(props) {
 
 	return (
 		<div className="message-input flex justify-content-center border-round-lg border-noround-top px-6 py-5">
-
 			<InputText
 				value={message}
 				placeholder="Start typing away!"
-				className="flex-grow-1 border-round-3xl mr-3"
+				className="flex-grow-1 border-round-2xl mr-3"
 				onChange={(e) => {
 					console.log(e)
 					setMessage(e.target.value)
@@ -20,7 +21,7 @@ export default function MessageInput(props) {
 
 			<Button
 				label="Send it!"
-				className="border-round-3xl"
+				className="border-round-2xl"
 				onClick={() => {
 					props.onSend(message)
 					setMessage('')

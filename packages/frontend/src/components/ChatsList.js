@@ -14,7 +14,7 @@ export default function ChatsList(props) {
 				{histories.map(chatData => {
 					return (
 						<div
-							className='cursor-pointer hover:surface-100 mt-1 p-3 white-space-nowrap overflow-x-hidden text-overflow-ellipsis'
+							className='text-sm cursor-pointer p-3 shadow-1 mb-3 white-space-nowrap overflow-x-hidden text-overflow-ellipsis'
 							onClick={() => props.onChatSelect(chatData.name)}
 						>
 							{chatData.name}

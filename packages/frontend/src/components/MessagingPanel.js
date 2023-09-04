@@ -34,6 +34,6 @@ export default function MessagingPanel(props) {
 						</span>
 					</div>
 			}
-    </div>
+		</div>
 	)
 }

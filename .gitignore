@@ -1,1 +1,8 @@
+# Prevents node_modules from being added to the repo.
 node_modules/
+
+# Prevents env from being shared online.
+.env
+
+# Lets us have a local database and not sync it.
+pg-db/

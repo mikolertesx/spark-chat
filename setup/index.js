@@ -6,6 +6,6 @@
 */
 const utils = require("./utils");
 
-
 console.log("Creating env automatically if it doesn't exist");
+
 utils.writeEnv();

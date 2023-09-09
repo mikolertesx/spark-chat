@@ -7,8 +7,9 @@ function getEnv() {
   const DB_PASSWORD = prompt("DB Password? ") || defaultData.DB_PASSWORD;
   const DB_NAME = prompt("DB Name? ") || defaultData.DB_NAME;
   const DB_PORT = prompt("DB Port? ") || defaultData.DB_PORT;
+  const DB_EMAIL = prompt("DB EMAIL? ") || defaultData.DB_EMAIL;
 
-  return { DB_USER, DB_PASSWORD, DB_NAME, DB_PORT };
+  return { DB_USER, DB_PASSWORD, DB_NAME, DB_PORT, DB_EMAIL };
 }
 
 function writeEnv() {

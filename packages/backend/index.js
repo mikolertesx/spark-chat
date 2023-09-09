@@ -1,6 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const startDB = require('./utils/start-db');
+
+console.log(process.env);
 const { Server } = require("socket.io");
 const io = new Server(8100, {
   cors: {
@@ -25,4 +28,6 @@ io.on("connection", (socket) => {
   });
 });
 
-app.listen(8000);
+app.listen(process.env.PORT, (success) => {
+  console.log(`Server started on ${process.env.PORT} successfuly`);
+});

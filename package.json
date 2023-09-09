@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "Tests are not configured",
-    "prepare-commit": "echo 'Linting frontend project' && cd ./packages/frontend && npx lint-staged"
+    "bootstrap": "npx lerna exec npm install",
+    "prepare-commit": "echo 'Linting frontend project' && cd ./packages/frontend && npx lint-staged",
+    "start:backend": "docker compose -f \"docker-compose.yaml\" up -d --build",
+    "start:frontend": "echo Frontend is not configured",
+    "test": "echo Tests are not configured",
+    "setup": "node ./setup/index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +18,9 @@
     "husky": "^8.0.3",
     "lerna": "^7.1.0",
     "lint-staged": "^13.2.3"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "yargs": "^17.7.2"
   }
 }
